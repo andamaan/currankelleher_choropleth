@@ -4,6 +4,7 @@ import {loadAndProcessData} from './loadAndProcessData.js'
 import {colorLegend} from './colorLegend.js'
 import {chloroplethMap} from './chloroplethMap.js'
 
+
 const svg = select('svg');
 const chloroplethMapG = svg.append('g')
 const colorLegendG = svg.append('g')

@@ -1,7 +1,10 @@
 body{
     margin: 0px;
     overflow: hidden;
+    text-align: center;
 }
+
+
 
 .sphere {
     fill: #304a68;

@@ -10,12 +10,12 @@ export const loadAndProcessData = () =>
         ])
         .then(([tsvData, topoJSONdata]) => {    
             const  rowById = tsvData.reduce((accumulator, d)=> {
-                accumulator[d.iso_n3] = d
+                accumulator[d.iso_n3] = d 
                 return accumulator
             }, {})
 
             const countries = feature(topoJSONdata, topoJSONdata.objects.countries)
-
+            console.log(countries)
             countries.features.forEach(d=> {
                 Object.assign(d.properties, rowById[d.id])
             })
